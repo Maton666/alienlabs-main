@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alienlabs.cl</title>
+  <link rel="stylesheet" href="start.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+  </script>
+  <style>
+    ul.nav {
+      text-align: left;
+    }
+    ul.nav li a {
+      color: white;
+      font-size: 1.2em; 
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: left;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #007bff; 
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  </style>
+</head>
+<body>
+  <div class="texto-bienvenido">
+    Bienvenidos a la tienda online de Suplementos AlienLabs Chile
+  </div>
+
+  <div id="logo">
+    <a href="home.html">
+      <img src="image/Alien_LABS_1.jpg" alt="logo" width="350px">
+    </a>
+  </div>
+
+  <ul class="nav justify-content-center pb-4">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="creatina.html">Creatinas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="proteina.html">Proteínas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="preentreno.html">Pre-entrenos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#offcanvasRight" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Carrito</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="encuentranos.html">Encuentranos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="login.html">Login</a>
+    </li>
+    
+  </ul>
+  
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/bannercbumslide2080.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/Iron-Whey-Arnold-Proteina.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="image/maxresdefault.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      Contenido del carrito aquí...
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <div>
+          <i class="fas fa-phone"></i> Teléfono: +56 (9)452250222
+        </div>
+        <div>
+          <i class="far fa-envelope"></i> Correo: alienlabs@contact.cl
+        </div>
+        <div>
+          <a href="https://www.instagram.com/tu_cuenta_de_instagram" target="_blank"><i class="fab fa-instagram"></i> Instagram @alienlabs</a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/tu_cuenta_de_facebook" target="_blank"><i class="fab fa-facebook"></i> Facebook @alienlabs</a>
+        </div>
+        <div>
+          <a href="encuentranos.html" target="_blank"><i class="fas fa-map-marker-alt"></i> Av. Apoquindo 4900, local 106, Las Condes, Región Metropolitana</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <link rel="stylesheet" href="graficas.html">
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

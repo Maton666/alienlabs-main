@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>alienlabs.cl - Registro</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="start.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    ul.nav {
+      text-align: center;
+    }
+    ul.nav li a {
+      color: white;
+      font-size: 1.2em; 
+    }
+    #logo {
+      text-align: center;
+      margin-top: 20px; 
+    }
+    #logo img {
+      max-width: 200px; 
+    }
+    .login-container {
+      width: 300px;
+      margin: 50px auto; /* Center the form horizontally */
+      text-align: left; 
+    }
+    .login-input {
+      width: calc(100% - 30px); 
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .login-icon {
+      color: white; 
+      position: relative;
+      top: -45px;
+      margin-left: 300px; 
+    }
+  </style>
+</head>
+<body>
+  <div id="logo">
+    <a href="home.html">
+      <img src="image/Alien_LABS_1.jpg" alt="logo">
+    </a>
+  </div>
+
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="creatina.html">Creatinas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="proteina.html">Proteínas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="preentreno.html">Pre-entrenos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#offcanvasRight" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Carrito</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="encuentranos.html">Encuentranos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="login.html">Login</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="registro.html">Registro</a>
+    </li>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        Contenido del carrito aquí...
+      </div>
+    </div>
+  </ul>
+
+  <div class="login-container">
+    <form id="registration-form">
+      <div class="form-group">
+        <input type="text" class="form-control login-input" id="firstname" placeholder="Nombre">
+        <i class="fas fa-user login-icon"></i>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control login-input" id="lastname" placeholder="Apellido">
+        <i class="fas fa-user login-icon"></i>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control login-input" id="email" placeholder="Correo electrónico">
+        <i class="fas fa-envelope login-icon"></i>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control login-input" id="password" placeholder="Contraseña">
+        <i class="fas fa-lock login-icon"></i>
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control login-input" id="confirmPassword" placeholder="Repetir contraseña">
+        <i class="fas fa-lock login-icon"></i>
+      </div>
+      <button type="submit" id="register-button" class="btn btn-primary">Registrarse</button>
+    </form>
+  </div>
+
+  <script src="validacion.js"></script>
+</body>
+</html>
